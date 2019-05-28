@@ -2068,9 +2068,9 @@ class JLink(object):
         return res
 
     @connection_required
-    def exec_ram(self, addr):
-        """Start a program in ram.
-           Author: Heyn( heyunhuan@gmail.com )
+    def exec_app(self, addr):
+        """ Start a program in ram.
+            Author: Heyn( heyunhuan@gmail.com )
         """
         val = self.memory_read32( addr, 2 )
         reg_msp, reg_pc = val[0], val[1]
@@ -2081,7 +2081,7 @@ class JLink(object):
 
     @connection_required
     def go(self):
-        """Start the target CPU.
+        """ Start the target CPU.
             Author: Heyn( heyunhuan@gmail.com )
         """
         self._dll.JLINKARM_Go()

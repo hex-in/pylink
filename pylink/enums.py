@@ -725,7 +725,7 @@ class JLinkRTTDirection(object):
 
 class JLinkCM4Register( object ):
     """ JLink Cortex M4 Registers.
-        New add by Heyn
+        Author: Heyn( heyunhuan@gmail.com )
     """
     R0 = 0
     R1 = 1
