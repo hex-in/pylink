@@ -2068,6 +2068,25 @@ class JLink(object):
         return res
 
     @connection_required
+    def exec_ram(self, addr):
+        """Start a program in ram.
+           Author: Heyn( heyunhuan@gmail.com )
+        """
+        val = self.memory_read32( addr, 2 )
+        reg_msp, reg_pc = val[0], val[1]
+
+        self.register_write( enums.JLinkCM4Register.MSP, reg_msp )
+        self.register_write( enums.JLinkCM4Register.R15, reg_pc  )
+        self._dll.JLINKARM_Go()
+
+    @connection_required
+    def go(self):
+        """Start the target CPU.
+            Author: Heyn( heyunhuan@gmail.com )
+        """
+        self._dll.JLINKARM_Go()
+
+    @connection_required
     def reset_tap(self):
         """Resets the TAP controller via TRST.
 

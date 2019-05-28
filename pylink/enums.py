@@ -722,3 +722,74 @@ class JLinkRTTDirection(object):
     """RTT Direction."""
     UP = 0
     DOWN = 1
+
+class JLinkCM4Register( object ):
+    """ JLink Cortex M4 Registers.
+        New add by Heyn
+    """
+    R0 = 0
+    R1 = 1
+    R2 = 2
+    R3 = 3
+    R4 = 4
+    R5 = 5
+    R6 = 6
+    R7 = 7
+    R8 = 8
+    R9 = 9
+    R10 = 10
+    R11 = 11
+    R12 = 12
+    R13 = 13
+    R14 = 14
+    R15 = 15
+    PC = 15
+    XPSR = 16
+    MSP = 17
+    PSP = 18
+    RAZ = 19
+    CFBP = 20
+    APSR = 21
+    EPSR = 22
+    IPSR = 23
+    PRIMASK = 24
+    BASEPRI = 25
+    FAULTMASK = 26
+    CONTROL = 27
+    BASEPRI_MAX = 28
+    IAPSR = 29
+    EAPSR = 30
+    IEPSR = 31
+    FPSCR = 32
+    FPS0 = 33
+    FPS1 = 34
+    FPS2 = 35
+    FPS3 = 36
+    FPS4 = 37
+    FPS5 = 38
+    FPS6 = 39
+    FPS7 = 40
+    FPS8 = 41
+    FPS9 = 42
+    FPS10 = 43
+    FPS11 = 44
+    FPS12 = 45
+    FPS13 = 46
+    FPS14 = 47
+    FPS15 = 48
+    FPS16 = 49
+    FPS17 = 50
+    FPS18 = 51
+    FPS19 = 52
+    FPS20 = 53
+    FPS21 = 54
+    FPS22 = 55
+    FPS23 = 56
+    FPS24 = 57
+    FPS25 = 58
+    FPS26 = 59
+    FPS27 = 60
+    FPS28 = 61
+    FPS29 = 62
+    FPS30 = 63
+    FPS31 = 64
